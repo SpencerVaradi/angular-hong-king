@@ -1,0 +1,29 @@
+{
+  "name": "angular-hong-king",
+  "version": "1.0.0",
+  "description": "Test directory for coursera class",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "https://github.com/SpencerVaradi/angular-hong-king.git",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpencerVaradi/angular-hong-king.git"
+  },
+  "keywords": [
+    "angular",
+    "node",
+    "coursera"
+  ],
+  "author": "Spencer Varadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpencerVaradi/angular-hong-king/issues"
+  },
+  "homepage": "https://github.com/SpencerVaradi/angular-hong-king#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
