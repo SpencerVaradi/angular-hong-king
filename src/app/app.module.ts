@@ -13,7 +13,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
+import { baseURL } from './shared/baseurl';
 
 import 'hammerjs';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -60,6 +62,7 @@ import { LoginComponent } from './login/login.component';
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     MatToolbarModule,
     MatListModule,
     MatGridListModule,
@@ -73,12 +76,14 @@ import { LoginComponent } from './login/login.component';
     MatSlideToggleModule,
     MatProgressSpinnerModule,
     MatSliderModule,
+    HttpModule
 
   ],
   providers: [
     DishService,
     PromotionService,
     LeaderService,
+    { provide: 'BaseURL', useValue: baseURL }
   ],
   entryComponents: [
     LoginComponent,
